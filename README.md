@@ -8,19 +8,25 @@ The final output draws a colored boundary around each detected card and displays
 ---
 
 # 📁 Project Files
+The project is organized as follows:
+
+Project/
 │
 ├── Document Detection.ipynb # Main Jupyter Notebook
+│
 ├── Images/ # Sample input images
-│ ├── sample1.jpg # Sample input images (add your own)
-  ├── sample2.jpg
-  ├── sample3.jpg
-  └── ...
+│ ├── sample1.jpg
+│ ├── sample2.jpg
+│ ├── sample3.jpg
+│ └── ... 
+│
 ├── Outputs/ # Auto-generated output images
 │ ├── multiple_cards_detected_1.jpg
 │ ├── multiple_cards_detected_2.jpg
-│ └── ...
-├── README.md 
-└── requirements.txt # Dependencies
+│ └── ... (images saved after running notebook)
+│
+├── README.md # Documentation file
+└── requirements.txt # Python dependencies
 
 
 Place your test images in the **same folder** as the notebook before running.
@@ -30,8 +36,9 @@ Place your test images in the **same folder** as the notebook before running.
 # 🛠 Installation
 
 Install required packages using:
+ ```python
    pip install -r requirements.txt
-
+ ```
 **Dependencies:**
 
 - opencv-python  
@@ -52,9 +59,9 @@ Open Jupyter Notebook in your project folder
 
 ### **2️⃣ Update the image file names if needed**
 Inside the notebook, find this list:
-
+```python
 sample_images = ["sample1.jpg", "sample2.jpg", "sample3.jpg"]
-
+```
 
 Replace these file names with your own images if required.
 
@@ -72,7 +79,7 @@ The notebook will perform the following steps:
 - **Save the final result image** in the project folder
 
 Here is the exact code used to process all images:
-
+```python
 sample_images = [
     "sample1.jpg",
     "sample2.jpg",
@@ -88,7 +95,7 @@ for i, img_name in enumerate(sample_images, start=1):
         print(f"Saved: {out_name} | Detected {len(contours)} card(s)")
     else:
         print(f"Skipped {img_name} (image not found or unreadable)")
-
+```
 # 🧠 Algorithm Overview
 
 The detection system uses a fully classical computer vision pipeline (no training data).  
