@@ -1,7 +1,7 @@
 # 🪪 ID Card Boundary Detection
 
 This project contains a **generalized identity-card boundary detection algorithm** implemented using **OpenCV** inside a Jupyter Notebook.  
-No training data is used, as required in the assignment.
+No training data is used.
 
 The final output draws a colored boundary around each detected card and displays the processed result.
 
