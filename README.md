@@ -6,7 +6,7 @@ No training data is used, as required in the assignment.
 The final output draws a colored boundary around each detected card and displays the processed result.
 
 ---
-
+```markdown
 # 📁 Project Files
 The project is organized as follows:
 
@@ -28,7 +28,7 @@ Project/
 ├── README.md # Documentation file
 └── requirements.txt # Python dependencies
 
-
+```
 Place your test images in the **same folder** as the notebook before running.
 
 ---
