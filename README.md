@@ -80,13 +80,17 @@ The notebook will perform the following steps:
 
 Here is the exact code used to process all images:
 ```python
+
 sample_images = [
-    "sample1.jpg",
     "sample2.jpg",
-    "sample3.jpg",
+    "sample1.jpg",
+    "sample.jpg",
     "sample4.jpg",
-    "sample5.jpg"
+    "sample5.jpg",
+    "sample6.jpg",
+    "sample7.jpg"
 ]
+
 for i, img_name in enumerate(sample_images, start=1):
     output, contours = detect_multiple_id_cards(img_name, show=True)
     if output is not None:
@@ -95,6 +99,7 @@ for i, img_name in enumerate(sample_images, start=1):
         print(f"Saved: {out_name} | Detected {len(contours)} card(s)")
     else:
         print(f"Skipped {img_name} (image not found or unreadable)")
+
 ```
 # 🧠 Algorithm Overview
 
